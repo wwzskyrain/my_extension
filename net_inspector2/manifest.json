@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Net Inspector",
+    "version": "0.1",
+    "description": "Inspect network requests by resource type",
+    "permissions": [
+      "webRequest",
+      "storage",
+      "tabs"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
