@@ -48,7 +48,6 @@ chrome.runtime.onMessage.addListener((msg) => {
   // 打印所有视频URL，每行一个
   videoUrls.forEach(url => console.log(url));
 
-  // 默认选最高质量（第一个通常是最高）
   const m3u8Url = findHighestQualityUrl(videoUrls);
   // 打印最高质量URL
   console.log("【contents.js】Highest quality URL:", m3u8Url);
